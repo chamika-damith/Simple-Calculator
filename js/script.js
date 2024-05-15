@@ -21,11 +21,41 @@ function Additions() {
     }
 }
 
+function Minus() {
+    if (parseInt(firstValue)>=0) {
+        let s = displayValue.val(parseInt(firstValue) - parseInt(secondValue));
+    }else {
+        displayValue.val('error');
+    }
+}
+
+function Multiply() {
+    if (parseInt(firstValue)>=0) {
+        let s = displayValue.val(parseInt(firstValue) * parseInt(secondValue));
+    }else {
+        displayValue.val('error');
+    }
+}
+
+function Divides() {
+    if (parseInt(firstValue)>=0) {
+        let s = displayValue.val(parseInt(firstValue) / parseInt(secondValue));
+    }else {
+        displayValue.val('error');
+    }
+}
+
 function calculate(){
      secondValue=displayValue.val();
 
     if (functionValue ==='+'){
         Additions();
+    }else if (functionValue ==='-'){
+        Minus();
+    }else if (functionValue ==='*'){
+        Multiply();
+    }else if (functionValue ==='/'){
+        Divides();
     }
 }
 function clearDisplay(){
