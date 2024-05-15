@@ -24,7 +24,7 @@ body{
 }
 .keys{
     display: grid;
-    grid-template-columns: repeat(4,auto);
+    grid-template-columns: repeat(4,1fr);
     gap: 10px;
     padding: 25px;
 }
@@ -55,4 +55,8 @@ button:active{
 }
 .operator-btn:active{
     background-color: #ffbf34;
+}
+.equal{
+    width: 210px;
+    grid-column: span 2;
 }

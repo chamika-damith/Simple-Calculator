@@ -58,6 +58,11 @@ function calculate(){
         Divides();
     }
 }
+function ac(){
+    let s = displayValue.val();
+    s=s.slice(0,-1);
+    displayValue.val(s);
+}
 function clearDisplay(){
     displayValue.val('');
     firstValue=null;
